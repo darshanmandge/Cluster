@@ -1,0 +1,28 @@
+## Running a parallel NEURON Simulation 
+
+1. Connect to Cluster: Look for Remote Desktop Connection in the Windows menu and open it. When it opens, enter the IP address into the Computer box and connect. A window might popup with a message: "The identity of the remote computer is cannot be verified. Do you want to connect anyway?". You could tick "Don't ask me again for connections to this computer" box and press Yes. A Login to xrdp window will open. Ensure that in the Module shows sesman-Xvnc and Enter the username and password and login
+
+2. Once logged in navigate to your code folder in simulations folder in the home directory. Use the shortcut on desktop.
+
+3. Right click in the blank space in your code folder and select Open Terminal Here.
+
+4. This will open a terminal pointing to your code folder. Now we have to first compile the mod files, copy the files to all node and then run the simulations.
+
+    Compiling mod files           :Type nrnivmodl and press enter. If the compilation is successful, you can move ahead else debug the errors in the mod files.
+                     
+    Copying files to all Nodes :Run sync_slaves on the terminal for copying the data files to all the nodes. Thanks to Mithun for implementing this!
+
+    Running the simulation     :Type  mpiexec -np 48 -f ~/mpich1/hosts nrniv -mpi YOURFILE.HOC
+
+Explanation:
+
+mpiexec                      : calls the MPI communication protocol.
+-np 48                       : Number of processors. This can be changed any number between 1-48 based on the simulation requirement.
+-f ~/mpich1/hosts  : hosts is the file which contain the names and number of processors in each the node. If you open the hosts file it contents look like this:
+                                     headnode:12 worker1:12 worker2:12 worker3:12. You could alternatively write this instead of -f ~/mpich1/hosts for specifying the nodes and processors.
+nrniv -mpi                : Call NEURON with MPI
+YOURFILE.HOC              : Your hoc file name.
+
+You could close the Remote Desktop Connection from the using the X cross in the top bar and log-in again to see your simulations. Don't log out using the Ubuntu logout option which will close the simulation.
+
+Use the similar process as outlined in the File transfer method above to take the output data files. 
