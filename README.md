@@ -1,4 +1,4 @@
-# Buildng a Beowulf Cluster  on Ubuntu 16.04
+# Building a Beowulf Cluster  on Ubuntu 16.04
 
 The process has been divided into following steps:
 
@@ -30,20 +30,16 @@ Each step is described in detail below:
 * You might want a **KVM (Keyboard-Video-Mouse) switch** for cluster installation. This helps to access multiple PCs with one monitor, keyboard and mouse.
 
 
-### 2. Master Node Installtion
+### 2. Master Node Installtion  
+Start with these two links:
+* [Building a Beowulf Cluster in just 13 steps](https://www.linux.com/blog/building-beowulf-cluster-just-13-steps) 
+* [MPICH Cluster Linux](https://help.ubuntu.com/community/MpichCluster)
 
-* Beowulf follow these stepsto install  given here:
-
-* [Building a Beowulf Cluster in just 13 steps](https://www.linux.com/blog/building-beowulf-cluster-just-13-steps) (Start with this)
-* [MPICH Cluster Linux](https://help.ubuntu.com/community/MpichCluster) (And This)
-
-You will Installing MPI (Message Passing Interface) variant: MPICH, OpenMPI, etc. on the master PC
-* Then install the softwares you need.
-
+First install **MPI (Message Passing Interface) variant: MPICH, OpenMPI**, etc. on the master PC and then install the softwares you need.
 
 ### 3. Worker Nodes
-Install MPI and the software (according to the instructions given in the above 2 links) on one worker PC.
-If the worker PCs are of the same configuration, you can clone the single worker (called the Golden Worker) to other workers. You do not to install even the Operating System. All the drivers, hard-disk configurations and softwares are cloned to the new PC. You will just need to rename the PC and assign a local IP address
+Install **MPI** and the software (according to the instructions given in the above 2 links) on **one worker PC**.
+If the **worker PCs** are of the **same configuration**, you can **clone** the single worker (called the **Golden Worker**) to other workers. You do not have to install even the Operating System. All the drivers, hard-disk configurations and softwares are cloned to the new PC. You will **just need to rename the PC** and **assign a local IP address**.
 
 ### 4. Clone Golden Worker PC: 
 [See this page](https://en.wikibooks.org/wiki/Building_a_Beowulf_Cluster/Cloning_of_Slaves)
@@ -60,7 +56,7 @@ It is an open-source job scheduling software used by more than 60% of (https://s
 
 [List2](http://redbarnhpc.redbarncomputers.com/support/resources/)
 
-[Tutorial for setting-up Workload Manager on Beowulf Cluster](http://etutorials.org/Linux+systems/cluster+computing+with+linux/Part+III+Managing+Clusters/Chapter+14+Cluster+Workload+Management/)
+[Tutorial for setting-up Workload Manager on Beowulf Cluster](http://etutorials.org/Linux+systems/cluster+computing+with+linux/Part+III+Managing+Clusters/Chapter+14+Cluster+Workload+Management)
 
 
 
