@@ -1,33 +1,33 @@
 ## Buildng a Beowulf Cluster and Installing it on Ubuntu 16.04
 
-The pages has the steps for:
+The process has been divided into following steps:
 
-A. Installation for Beowulf Cluster,
+**A. Installation for Beowulf Cluster**
 
-B. Internet resources for Cluster development
+**B. Internet resources for Cluster development**
 
-C. Software for accessing cluster
+**C. Software for accessing cluster**
 
-D. Accessing the cluster,
+**D. Accessing the cluster**
 
-E. Problems faced during installation
+**E. Problems faced during installation**
  
 
-A. Steps for Installation of Beowulf Cluster:
-1. Hardware connections
-2. Master PC installation
-3. Worker PC installation
-4. Worker PC Cloning
-5. Installing Workload Manager (Optional. For giving access to multiple users)
+## A. Steps for Installation of Beowulf Cluster:
+### 1. Hardware connections
+### 2. Master PC installation
+### 3. Worker PC installation
+### 4. Worker PC Cloning
+### 5. Installing Workload Manager (Optional. For giving access to multiple users)
 
-1. Hardware Connections
+### 1. Hardware Connections
 * One of the PC is master node and others will be worker nodes.
 * Master will require 2 LAN cards: one connects to the internet directly and the other to the network router for communicating with other worker PCs.
 * Make hardware connections Ethernet cables: one from each PC should go to the network router.
 * You might want a KVM (Keyboard-Video-Mouse) switch for cluster installation. This helps to access multiple PCs with one monitor, keyboard and mouse.
 
 
-2. Master Node Installtion
+### 2. Master Node Installtion
 * I hope you want to install Beowulf using Ubuntu. You can follow the steps given here:
 
 * [https://www.linux.com/blog/building-beowulf-cluster-just-13-steps Building a Beowulf Cluster in just 13 steps] (Start with this)
@@ -37,35 +37,39 @@ You will Installing MPI (Message Passing Interface) variant: MPICH, OpenMPI, etc
 * Then install the softwares you need.
  
 
-3. Worker Nodes
+### 3. Worker Nodes
 Install MPI and the software (according to the instructions given in the above 2 links) on one worker PC.
 If the worker PCs are of the same configuration, you can clone the single worker (called the Golden Worker) to other workers. You do not to install even the Operating System. All the drivers, hard-disk configurations and softwares are cloned to the new PC. You will just need to rename the PC and assign a local IP address
 
-4. Clone Golden Worker PC: See this page
+### 4. Clone Golden Worker PC: 
+See this page:
 https://en.wikibooks.org/wiki/Building_a_Beowulf_Cluster/Cloning_of_Slaves
 
 
-5. Install a WorkLoad Manager
-* Workload manager such as Slurm is a job scheduling software used when you have multiple users using the same resource.
+### 5. Install a WorkLoad Manager
+* **Workload manager** such as **Slurm** is a job scheduling software used when you have multiple users using the same resource.
 
  [https://en.wikipedia.org/wiki/Slurm_Workload_Manager Slurm Workload Manager]
 
 It is an open-source job scheduling software used by more than 60% of Top500 supercomputers in the world. [https://slurm.schedmd.com/ Website]
 
-* List of other Workload managers: [https://developer.nvidia.com/cluster-management List 1] [http://redbarnhpc.redbarncomputers.com/support/resources/ List 2]
+* **List of other Workload managers**: 
+[https://developer.nvidia.com/cluster-management List 1] 
+[http://redbarnhpc.redbarncomputers.com/support/resources/ List 2]
 
 * [http://etutorials.org/Linux+systems/cluster+computing+with+linux/Part+III+Managing+Clusters/Chapter+14+Cluster+Workload+Management/ Tutorial for setting -up Workload Manager on Beowulf Cluster]
 
 
 
-B. Some internet resources
-== Best Resources ==
+## B. Some internet resources
+
+**Best Resources **
 * [https://www.linux.com/blog/building-beowulf-cluster-just-13-steps Building a Beowulf Cluster in just 13 steps] (Start with this)
 * [https://help.ubuntu.com/community/MpichCluster MPICH Cluster Linux] (And This)
 * [https://en.wikibooks.org/wiki/Building_a_Beowulf_Cluster WikiBooks] (Use Case. You could go through this)
 
 
-Others:
+**Others:**
 * [http://byobu.info/articles/Building_a_simple_Beowulf_cluster_with_Ubuntu.html Building a simple Beowulf cluster with Ubuntu]
 * [https://www-users.cs.york.ac.uk/~mjf/pi_cluster/src/Building_a_simple_Beowulf_cluster.html Building a simple Beowulf cluster with Ubuntu]
 * [http://webhome.phy.duke.edu/~rgb/brahma/Resources/beowulf/ Beowulf Project at CESDIS (NASA)]
@@ -81,7 +85,7 @@ Others:
 
 
 
-C. Useful software for cluster
+## C. Useful software for cluster
 
 cssh (Cluster SSH) to log on to all worker PCs at once.
 
@@ -104,24 +108,26 @@ MATLAB: Parallel computing with MATLAB® on a cluster requires two products:
 *[https://in.mathworks.com/support/product/DM/installation/ver_current.html Install]
 
 
-D. Using the Cluster
+## D. Using the Cluster
 
-Ubuntu:
+**Ubuntu:**
 
 Use ssh. Open Terminal. ssh using user credentials: ssh username@IPADDRESS.
 
 File transfer using FTP.
 
-Windows:
+**Windows:**
 
 The cluster could be accessed using
 
-* Graphical User Interface (GUI via Remote Desktop Connection) or
+* **Graphical User Interface (GUI via Remote Desktop Connection)** or
 
-* Command line (using secure shell protocol, ssh).
+* **Command line (using secure shell protocol, ssh)**
 
 
-Graphical User Interface Based (Windows): There are two processes to be done here:
+**Graphical User Interface Based (Windows):**
+
+There are two processes to be done here:
 
 *File Transfer using Winscp or a Network folder.
 *Running the Simulation using Remote Desktop Connection.
@@ -157,7 +163,7 @@ h. Launch Xming Server before logging in through Putty.
 i. Now, if you launch any GUI based program from Putty e.g. firefox, nrngui you will see their graphical window.
 
 
-E. Some Problems faced during the development
+## E. Some Problems faced during the development
 
 In the 13 step guide to cluster development
 ** Needed to install a fortran compiler at step 9 before configure step. Compiler installed gfortran
@@ -202,7 +208,7 @@ dd is convert and copy and requires administrative priviledges.
 
 
 
-Password Less SSH
+## Password Less SSH
 
 Procedure to create a password-less ssh access:
 
