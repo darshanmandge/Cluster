@@ -49,7 +49,7 @@ If the worker PCs are of the same configuration, you can clone the single worker
 ### 5. Install a WorkLoad Manager
 **Workload manager** such as [**Slurm**](https://en.wikipedia.org/wiki/Slurm_Workload_Manager Slurm Workload Manager) is a job scheduling software used when you have multiple users using the same resource.
 
-It is an open-source job scheduling software used by more than 60% of (https://slurm.schedmd.com/ Website)(Top500 supercomputers in the world).
+It is an open-source job scheduling software used by more than 60% of (https://slurm.schedmd.com/ Website)[Top500 supercomputers in the world].
 
 **List of other Workload managers**
 
@@ -67,7 +67,7 @@ It is an open-source job scheduling software used by more than 60% of (https://s
 
 * [Building a Beowulf Cluster in just 13 steps](https://www.linux.com/blog/building-beowulf-cluster-just-13-steps)(Start with this)
 * [MPICH Cluster Linux](https://help.ubuntu.com/community/MpichCluster)(And This)
-* [WikiBooks](https://en.wikibooks.org/wiki/Building_a_Beowulf_Cluster)(Use Case. You could go through this)
+* [WikiBooks](https://en.wikibooks.org/wiki/Building_a_Beowulf_Cluster)(Use Case)
 
 
 **Others**
@@ -79,8 +79,8 @@ It is an open-source job scheduling software used by more than 60% of (https://s
 * [How to build a beowulf](https://www.youtube.com/watch?v=kcBMtMiTHHE)
 * [OSCAR](http://svn.oscar.openclustergroup.org/trac/oscar/wiki/DistroSupport)
 * [Beowulf HOWTO](http://oss.sgi.com/LDP/HOWTO/Beowulf-HOWTO.html#toc5)
-* [Beowulf.org](http://www.beowulf.org/overview/faq.html Beowulf.org)
-* [Beowulf Underground](http://www.beowulf-underground.org/ beowulf-underground)
+* [Beowulf.org](http://www.beowulf.org/overview/faq.html)
+* [Beowulf Underground](http://www.beowulf-underground.org/)
 * [Raspberry Pi Supercomputer](http://www.zdnet.com/article/build-your-own-supercomputer-out-of-raspberry-pi-boards)
 * [Getting started with HPC](http://www.linux-magazine.com/Issues/2013/154/Getting-Started-with-HPC-Clusters)
 * [MPI Forum](http://mpi-forum.org/)
@@ -108,7 +108,7 @@ Parallel computing with MATLAB® on a cluster requires two products:
 * **MATLAB Distributed Computing Server™**, which should be installed on each computer of the cluster that performs the computation.
 * **Parallel Computing Toolbox™**, which should be installed on the computer where you write your applications.
 
-* [Installation](https://in.mathworks.com/support/product/DM/installation/ver_current.html Install)
+* [Installation](https://in.mathworks.com/support/product/DM/installation/ver_current.html)
 
 
 ## D. Using the Cluster
