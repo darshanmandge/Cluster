@@ -31,33 +31,33 @@ The process has been divided into following steps:
 
 * Beowulf follow these stepsto install  given here:
 
-* [https://www.linux.com/blog/building-beowulf-cluster-just-13-steps](Building a Beowulf Cluster in just 13 steps) (Start with this)
-* [https://help.ubuntu.com/community/MpichCluster MPICH Cluster Linux](And This)
+* [Building a Beowulf Cluster in just 13 steps](https://www.linux.com/blog/building-beowulf-cluster-just-13-steps) (Start with this)
+* [MPICH Cluster Linux](https://help.ubuntu.com/community/MpichCluster) (And This)
 
 You will Installing MPI (Message Passing Interface) variant: MPICH, OpenMPI, etc. on the master PC
 * Then install the softwares you need.
- 
+
 
 ### 3. Worker Nodes
 Install MPI and the software (according to the instructions given in the above 2 links) on one worker PC.
 If the worker PCs are of the same configuration, you can clone the single worker (called the Golden Worker) to other workers. You do not to install even the Operating System. All the drivers, hard-disk configurations and softwares are cloned to the new PC. You will just need to rename the PC and assign a local IP address
 
 ### 4. Clone Golden Worker PC: 
-[https://en.wikibooks.org/wiki/Building_a_Beowulf_Cluster/Cloning_of_Slaves](See this page)
+[See this page](https://en.wikibooks.org/wiki/Building_a_Beowulf_Cluster/Cloning_of_Slaves)
 
 
 ### 5. Install a WorkLoad Manager
-**Workload manager** such as [https://en.wikipedia.org/wiki/Slurm_Workload_Manager Slurm Workload Manager](**Slurm**) is a job scheduling software used when you have multiple users using the same resource.
+**Workload manager** such as [**Slurm**](https://en.wikipedia.org/wiki/Slurm_Workload_Manager Slurm Workload Manager) is a job scheduling software used when you have multiple users using the same resource.
 
-It is an open-source job scheduling software used by more than 60% of [https://slurm.schedmd.com/ Website](Top500 supercomputers in the world).
+It is an open-source job scheduling software used by more than 60% of (https://slurm.schedmd.com/ Website)(Top500 supercomputers in the world).
 
 **List of other Workload managers**
 
-[https://developer.nvidia.com/cluster-management](List 1)
+[List 1](https://developer.nvidia.com/cluster-management)
 
-[http://redbarnhpc.redbarncomputers.com/support/resources/](List2)
+[List2](http://redbarnhpc.redbarncomputers.com/support/resources/)
 
-[http://etutorials.org/Linux+systems/cluster+computing+with+linux/Part+III+Managing+Clusters/Chapter+14+Cluster+Workload+Management/ Tutorial for setting -up Workload Manager on Beowulf Cluster](List 3)
+[List 3](http://etutorials.org/Linux+systems/cluster+computing+with+linux/Part+III+Managing+Clusters/Chapter+14+Cluster+Workload+Management/ Tutorial for setting -up Workload Manager on Beowulf Cluster)
 
 
 
@@ -65,25 +65,25 @@ It is an open-source job scheduling software used by more than 60% of [https://s
 
 **Best Resources**
 
-* [https://www.linux.com/blog/building-beowulf-cluster-just-13-steps Building a Beowulf Cluster in just 13 steps](Start with this)
-* [https://help.ubuntu.com/community/MpichCluster MPICH Cluster Linux](And This)
-* [https://en.wikibooks.org/wiki/Building_a_Beowulf_Cluster WikiBooks](Use Case. You could go through this)
+* [Building a Beowulf Cluster in just 13 steps](https://www.linux.com/blog/building-beowulf-cluster-just-13-steps)(Start with this)
+* [MPICH Cluster Linux](https://help.ubuntu.com/community/MpichCluster)(And This)
+* [WikiBooks](https://en.wikibooks.org/wiki/Building_a_Beowulf_Cluster)(Use Case. You could go through this)
 
 
 **Others**
 
-* [http://byobu.info/articles/Building_a_simple_Beowulf_cluster_with_Ubuntu.html](Building a simple Beowulf cluster with Ubuntu)
-* [https://www-users.cs.york.ac.uk/~mjf/pi_cluster/src/Building_a_simple_Beowulf_cluster.html](Building a simple Beowulf cluster with Ubuntu)
-* [http://webhome.phy.duke.edu/~rgb/brahma/Resources/beowulf/](Beowulf Project at CESDIS (NASA))
-* [http://mpitutorial.com/tutorials/installing-mpich2/](MPI Tutorial)
-* [https://www.youtube.com/watch?v=kcBMtMiTHHE](How to build a beowulf)
-* [http://svn.oscar.openclustergroup.org/trac/oscar/wiki/DistroSupport](OSCAR)
-* [http://oss.sgi.com/LDP/HOWTO/Beowulf-HOWTO.html#toc5](Beowulf HOWTO)
-* [http://www.beowulf.org/overview/faq.html Beowulf.org](Beowulf.org)
-* [http://www.beowulf-underground.org/ beowulf-underground](Beowulf Underground)
-* [http://www.zdnet.com/article/build-your-own-supercomputer-out-of-raspberry-pi-boards](Raspberry Pi Supercomputer)
-* [http://www.linux-magazine.com/Issues/2013/154/Getting-Started-with-HPC-Clusters](Getting started with HPC)
-* [http://mpi-forum.org/](MPI Forum)
+* [Building a simple Beowulf cluster with Ubuntu](http://byobu.info/articles/Building_a_simple_Beowulf_cluster_with_Ubuntu.html)
+* [Building a simple Beowulf cluster with Ubuntu](https://www-users.cs.york.ac.uk/~mjf/pi_cluster/src/Building_a_simple_Beowulf_cluster.html)
+* [Beowulf Project at CESDIS (NASA)](http://webhome.phy.duke.edu/~rgb/brahma/Resources/beowulf/)
+* [MPI Tutorial](http://mpitutorial.com/tutorials/installing-mpich2/)
+* [How to build a beowulf](https://www.youtube.com/watch?v=kcBMtMiTHHE)
+* [OSCAR](http://svn.oscar.openclustergroup.org/trac/oscar/wiki/DistroSupport)
+* [Beowulf HOWTO](http://oss.sgi.com/LDP/HOWTO/Beowulf-HOWTO.html#toc5)
+* [Beowulf.org](http://www.beowulf.org/overview/faq.html Beowulf.org)
+* [Beowulf Underground](http://www.beowulf-underground.org/ beowulf-underground)
+* [Raspberry Pi Supercomputer](http://www.zdnet.com/article/build-your-own-supercomputer-out-of-raspberry-pi-boards)
+* [Getting started with HPC](http://www.linux-magazine.com/Issues/2013/154/Getting-Started-with-HPC-Clusters)
+* [MPI Forum](http://mpi-forum.org/)
 
 
 
@@ -108,7 +108,7 @@ Parallel computing with MATLAB® on a cluster requires two products:
 * **MATLAB Distributed Computing Server™**, which should be installed on each computer of the cluster that performs the computation.
 * **Parallel Computing Toolbox™**, which should be installed on the computer where you write your applications.
 
-* [https://in.mathworks.com/support/product/DM/installation/ver_current.html Install](Installation)
+* [Installation](https://in.mathworks.com/support/product/DM/installation/ver_current.html Install)
 
 
 ## D. Using the Cluster
@@ -139,19 +139,19 @@ There are two processes to be done here:
 
 **Softwares to Access Cluster from Windows**
 
-* [https://support.microsoft.com/en-us/help/17463/windows-7-connect-to-another-computer-remote-desktop-connection](Windows Remote Desktop Connection)
+* [Windows Remote Desktop Connection](https://support.microsoft.com/en-us/help/17463/windows-7-connect-to-another-computer-remote-desktop-connection)
 
-* **File Transfer**: [https://winscp.net/eng/docs/introduction]('Winscp')
+* **File Transfer**: ['Winscp'](https://winscp.net/eng/docs/introduction)
    * Its main function is file transfer between a local and a remote computer. Beyond this, WinSCP offers scripting and basic file manager functionality.
     
-   * [https://winscp.net/eng/docs/after_installation How top Use it](How to Use it)
+   * [How to Use it](https://winscp.net/eng/docs/after_installation)
 
-   * It also has several built-in [https://www.slant.co/versus/5954/5955/~filezilla_vs_winscp](functionalities) e.g. ssh shell, script editor
+   * It also has several built-in [functionalities](https://www.slant.co/versus/5954/5955/~filezilla_vs_winscp) e.g. ssh shell, script editor
 
 
 **Command Line Based (Windows)**
 
-a. Install [http://www.putty.org/](Putty)
+a. Install [Putty](http://www.putty.org/)
 
 b. Launch Putty from Windows menu
 
@@ -163,7 +163,7 @@ e. Copy file from your PC to cluster using the scp command.
 
 Optional Xming server could be used to see gui along with command line. 
 
-g. Download and install [https://sourceforge.net/projects/xming/](Xming Server) 
+g. Download and install [Xming Server](https://sourceforge.net/projects/xming/)
 
 h. Launch Xming Server before logging in through Putty.
 
@@ -214,7 +214,7 @@ Use these
 
 ```dd``` is convert and copy and requires administrative priviledges.
 
-[https://www.gnu.org/software/coreutils/manual/html_node/dd-invocation.html](dd reference)
+[dd reference](https://www.gnu.org/software/coreutils/manual/html_node/dd-invocation.html)
 
 
 
@@ -244,7 +244,7 @@ Thats it! After this you can ssh to the slave node from the master node using th
 
 without entering a password.
 
-For detailed explanation, please visit [https://www.linuxbabe.com/linux-server/setup-passwordless-ssh-login this page](this).
+For detailed explanation, see [this](https://www.linuxbabe.com/linux-server/setup-passwordless-ssh-login).
 
 
 **Problems with the shared folder :"/mirror"**
@@ -261,7 +261,7 @@ ii) Write a script to copy data from master to all worker PCs after doing paswor
 
 **Display Driver Problems** 
 
-GUI (Unity) won't resume after screen suspend. Try these options:
-https://askubuntu.com/questions/760043/ubuntu-16-04-unity-desktop-environment-doesnt-load-after-fresh-install
+GUI (Unity) won't resume after screen suspend. Try the [options here](
+https://askubuntu.com/questions/760043/ubuntu-16-04-unity-desktop-environment-doesnt-load-after-fresh-install)
 
 	
