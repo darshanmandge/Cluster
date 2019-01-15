@@ -10,15 +10,18 @@ The process has been divided into following steps:
 
 ## D. Accessing the cluster
 
-## E. Problems faced during installation
- 
+## E. Problems faced during installation    
+
+
+Each step is described in detail below:  
 
 ## A. Steps for Installation of Beowulf Cluster:
+
 ### 1. Hardware connections
 ### 2. Master PC installation
 ### 3. Worker PC installation
 ### 4. Worker PC Cloning
-### 5. Installing Workload Manager (Optional. For giving access to multiple users)
+### 5. Installing Workload Manager (Optional. For giving access to multiple users)  
 
 ### 1. Hardware Connections
 * One of the PC is **master node** and others will be **worker nodes**.
@@ -57,7 +60,7 @@ It is an open-source job scheduling software used by more than 60% of (https://s
 
 [List2](http://redbarnhpc.redbarncomputers.com/support/resources/)
 
-[List 3](http://etutorials.org/Linux+systems/cluster+computing+with+linux/Part+III+Managing+Clusters/Chapter+14+Cluster+Workload+Management/ Tutorial for setting -up Workload Manager on Beowulf Cluster)
+[Tutorial for setting-up Workload Manager on Beowulf Cluster](http://etutorials.org/Linux+systems/cluster+computing+with+linux/Part+III+Managing+Clusters/Chapter+14+Cluster+Workload+Management/)
 
 
 
