@@ -46,9 +46,9 @@ If the **worker PCs** are of the **same configuration**, you can **clone** the s
 
 
 ### 5. Install a WorkLoad Manager
-**Workload manager** such as [**Slurm**](https://en.wikipedia.org/wiki/Slurm_Workload_Manager Slurm Workload Manager) is a job scheduling software used when you have multiple users using the same resource.
+**Workload manager** such as [**Slurm**](https://en.wikipedia.org/wiki/Slurm_Workload_Manager) is a job scheduling software used when you have multiple users using the same resource.
 
-It is an open-source job scheduling software used by more than 60% of (https://slurm.schedmd.com/ Website)[Top500 supercomputers in the world].
+It is an open-source job scheduling software used by more than 60% of [Top500 supercomputers in the world](https://slurm.schedmd.com/).
 
 **List of other Workload managers**
 
